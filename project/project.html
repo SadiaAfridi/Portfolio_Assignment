@@ -5,6 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>projects</title>
 </head>
+<style>
+    form {
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ccc ;
+    }
+    input[type="text"], input[type="email"], textarea {
+        width: 90%;
+        padding: 4px;
+        margin-bottom: 10px;
+        border-radius: 3px;
+        border: 1px solid #ccc;
+    }
+  
+</style>
 <body>
     
     <a href="../index.html">Home</a>  
@@ -15,25 +31,63 @@
     <hr>
     <h1>My projects</h1>
     <ul>
-        <li><h3>portfolio</h3></li>
-        <img src="../images/HTML_project.PNG" alt="" width="200">
-        <dl>
-            <dt><b>portfolio using html</b></dt>
-            <dd>This project is my own portfolio website, built using HTML. It displays a range of projects, skills, and experiences.</dd>
-        </dl>
-        <dl>
-           <li> <h3>database</h3></li>
-           <img src="../images/ERD.jpeg" alt="" width="200">
-           <img src="../images/database.jpeg" alt="" width="200">
-            <dt><b>database for inventory management system</b></dt>
-            <dd>
-                <ol>
-                    <li>Check the requirements</li>
-                    <li>Draw ERD according to the requirements </li>
-                    <li>Create database with the help of ERD </li>
-                </ol>
-            </dd>
-        </dl>
+        <li>
+            <h3>Portfolio</h3>
+            <img src="../images/HTML_project.PNG" alt="Portfolio Project" width="200">
+            <dl>
+                <dt><b>Portfolio using HTML</b></dt>
+                <dd>This project is my own portfolio website, built using HTML. It displays a range of projects, skills, and experiences.</dd>
+            </dl>
+        </li>
+        <li>
+            <h3>Database</h3>
+            <img src="../images/ERD.jpeg" alt="ERD" width="200">
+            <img src="../images/database.jpeg" alt="Database" width="200">
+            <dl>
+                <dt><b>Database for Inventory Management System</b></dt>
+                <dd>
+                    <ol>
+                        <li>Check the requirements</li>
+                        <li>Draw ERD according to the requirements</li>
+                        <li>Create database with the help of ERD</li>
+                    </ol>
+                </dd>
+            </dl>
+        </li>
+        <li>
+            <h3>VHDL</h3>
+            <img src="../images/demux1.PNG" alt="DEMUX" width="200">
+            <img src="../images/demux2.PNG" alt="DEMUX" width="200">
+            <dl>
+                <dt><b>verilog code for designing demultiplexer</b></dt>
+                <dd>
+                    The Verilog code for a demultiplexer implements a digital logic design where one input signal is selectively routed to one of multiple output lines based on a control signal. It employs conditional statements like if-else or case constructs to determine the output line activated by the control signal's binary representation. This code includes a module declaration, input/output ports, and logic to route the input signal accordingly, often accompanied by testbench code for simulation verification.
+                </dd>
+            </dl>
+        </li>
     </ul>
+    <br><br>
+    <h2 style="text-align: center;">Feedback</h2>
+    <form>
+        <label for="feedback-name">Your Name:</label><br>
+        <input type="text" id="feedback-name" name="feedback-name" placeholder="Name" required><br>
+        
+        <label for="feedback-email">Your Email:</label><br>
+        <input type="email" id="feedback-email" name="feedback-email" placeholder="Email" required><br>
+        
+        <label for="feedback-project">Project:</label><br>
+        <select id="feedback-project" name="feedback-project">
+            <option value="options">Select</option>
+            <option value="Portfolio">Portfolio</option>
+            <option value="Database">Database</option>
+            <option value="Database">verilog</option>
+            
+        </select><br>
+        
+        <label for="feedback-message">Your Feedback:</label><br>
+        <textarea id="feedback-message" name="feedback-message" rows="4" cols="50" required></textarea><br>
+        
+        <input type="image" value="Submit Feedback" src="../images/submit_feedback.PNG" width="370">
+    </form>
 </body>
 </html>
