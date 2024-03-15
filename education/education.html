@@ -4,35 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Education</title>
+   
 </head>
 <style>
+   body{
+        background-color: rgb(46, 43, 52);
+        color: white;
+    }
+  
+    span{
+        color: rgb(160, 243, 243);
+    }
+    nav{
+        margin-top: 20px;
+       text-align: center;
+    }
+    nav a
+    {
+        color: white;
+        text-decoration: none;
+        padding: 10px 20px;
+        margin-left: 50px;
+    }
     table
     {
-        border: 1px solid black;
+        border: 1px solid white;
         text-align: center;
         border-collapse: collapse;
         width: 70%;
     }
     th, td
     {
-        border: 1px solid black;   
+        border: 1px solid white;   
      text-align: center;
     }
 </style>
 <body>
-    <a href="../index.html">Home</a>   
-    <a href="./education.html">Education</a>
-    <a href="../skill/skill.html">skills</a>  
-    <a href="../project/project.html">project</a> 
-    <a href="../contact/contact.html">contact</a> 
-    <hr>
-    <h1>EDUCATION</h1>
-    <h2>Welcome To My Education Journey</h2>
+    <header>
+       
+        <nav>
+            <a href="../index.html">Home</a> 
+            <a href="../index.html#about">About</a>  
+            <a href="./education.html">Education</a>
+            <a href="../skill/skill.html">Skills</a>  
+            <a href="../project/project.html">Projects</a> 
+            <a href="../contact/contact.html">Contact</a> 
+        </nav>
+        </header>
+    <h1 style="text-align: center;">EDUCATION</h1>
+    <h2>Welcome To My <span>Education Journey</span></h2>
     <p>Below, you'll find a comprehensive overview of my academic qualifications.</p>
     <br>
-    <table bgcolor="black" >
+    <table >
     <thead>
-        <tr bgcolor="gray">
+        <tr >
             <th></th>
             <th>Institution Name</th>
             <th>Field of Study</th>
@@ -44,7 +69,7 @@
         </tr>
     </thead>
     <tbody>
-        <tr bgcolor="lightgray">
+        <tr >
             <th>MATRIC</th>
              <!-- school name -->
             <td>GGHS</td>
@@ -55,7 +80,7 @@
             <td>844</td>
             <td>76.72%</td>
         </tr>
-        <tr bgcolor="lightgray">
+        <tr >
                 <th>INTERMEDIATE</th>
                 <!-- college name -->
                 <td>GGDC Bacha Khan</td>
@@ -64,7 +89,7 @@
                 <td>920</td>
                 <td>83.63%</td>
         </tr>        
-        <tr bgcolor="lightgray">
+        <tr >
                     <th>BS Computer Science</th>
                     <!-- UNIVERSITY -->
                     <td>SBBWU PESHAWAR</td>
@@ -77,5 +102,6 @@
         </tr>
      </tbody>  
     </table>  
+    
 </body>
 </html>

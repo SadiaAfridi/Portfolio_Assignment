@@ -4,28 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <a href="./index.html">Home</a> 
-    <a href="./education/education.html">Education</a>
-    <a href="./skill/skill.html">skills</a>   
-    <a href="./project/project.html">project</a> 
-    <a href="./contact/contact.html">contact</a> 
-    <hr>
-    <h1>Welcome to My Portfolio</h1>
-    <h2>About Me</h2>
-    <table>
-        <tr>
-            <th><img src="./images/photo.jpg" alt="Profile photo of Sadia Afridi"  width="130"></th>
-            <td >
-                <h2>SADIA AFRIDI</h2>
-                 <p><br>I'm Sadia Afridi  student of BS computer science at Shaheed Benazir Bhutto Women University Peshawar. <br> currently i'm learning web and mobile app development at <strong>SMIT</strong></p>    
-               
-            </td>
-        </tr>
+<style>
+    body{
+        background-color: rgb(46, 43, 52);
+        /* background-color: rgb(6, 6, 26); */
         
-    </table>
-    <p><b>Contact me via email:</b> example@gmail.com or <a href="https://www.linkedin.com/in/sadia-a-8818032b2/" target="_blank">LinkedIn</a>.</p>
+        color: white;
+    }
+   
+    span{
+        /* color: rgb(160, 243, 243); */
+        color: rgb(14, 132, 132);
+    }
+    nav{
+        margin-top: 20px;
+       text-align: center;
+    }
+    nav a
+    {
+        color: white;
+        text-decoration: none;
+        padding: 10px 20px;
+        margin-left: 50px;
+    }
+    #profile{
+        border-radius: 30px;
+        /* margin-left: 50%; */
+    }
+    #linkedin{
+        color: white;
+        text-decoration: none;
+    }
+    #info{
+        margin-left: 20px;
+    }
+    #contact a
+    {
+        margin-left: 20px;
+    }
+</style>
+<body>
+    <header style="text-align: center;">
+        <nav>
+            <a href="./index.html">Home</a> 
+            <a href="#About">About</a>
+            <a href="./education/education.html">Education</a>
+            <a href="./skill/skill.html">Skills</a>   
+            <a href="./project/project.html">Projects</a> 
+            <a href="./contact/contact.html">Contact</a> 
+        </nav>
+    </header>
+            <div id="info">
+                <h1 style="text-align: center;">Welcome to My <span>Portfolio</span></h1>
+                <img src="./images/photo.jpg" alt="Profile photo of Sadia Afridi"  width="150" align="center" id="profile">
+                <br><br>
+                <audio controls>
+                    <source src="audio/bird.mp3" type="audio/mpeg">
+                </audio>
+                <h2>Hello, I am</h2>
+                <h1>SADIA AFRIDI </h1>
+                <h1>I am a <span>Web Developer</span></h1>
+            </div>
+            <div id="contact">
+                <a href="https://www.linkedin.com/in/sadia-a-8818032b2/" target="_blank" id="linkedin"><img src="./images/linkedin.png" alt=""></a>
+                <a href="mailto:sadiaafridi663@gmail.com"><img src="./images/gmail.png" alt="gmail"> </a>
+                <a href="https://github.com/SadiaAfridi"><img src="./images/github.png "  alt="github" width="50"></a>
+            </div>
+ <section id="About" style="text-align: center;">
+    <h1>ABOUT <span>ME</span></h1>
+    <p><br>I'm Sadia Afridi  student of BS computer science at Shaheed Benazir Bhutto Women University Peshawar. <br> currently i'm learning web and mobile app development at <strong>SMIT</strong></p>
 
+</section>
+<footer style="text-align: center;">
+    <p>&copy; 2024 My Portfolio | Designed by Sadia Afridi</p>
+</footer>
 </body>
 </html>

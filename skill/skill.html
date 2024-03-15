@@ -4,38 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>skills</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+<style>
+       body{
+        background-color: rgb(46, 43, 52);
+        color: white;
+    }
+  
+    span{
+        color: rgb(160, 243, 243);
+    }
+    nav{
+        margin-top: 20px;
+       text-align: center;
+    }
+    nav a
+    {
+        color: white;
+        text-decoration: none;
+        padding: 10px 20px;
+        margin-left: 50px;
+    }
+</style>
 <body>
-    <a href="../index.html">Home</a> 
-    <a href="../education/education.html">Education</a>  
-    <a href="./skill.html">skills</a>  
-    <a href="../project/project.html">project</a> 
-    <a href="../contact/contact.html">contact</a> 
-    <hr>
-    <h1>my skills</h1>
-    <h2>programing languages</h2>
-    <ul>
-        <li>
-            <h3>C++</h3>
-            <img src="../images/C++.jpg" alt="C++ Logo" width="100">
-            <p>C++ is an object-oriented programming language which gives a clear structure to programs and allows code to be reused, lowering development costs.</p>
-        </li>
-        <li>
-           <h3> verilog</h3>
-            <img src="../images/verilog.jpg" alt="verilog Logo" width="150">
-            <p> Hardware description languages used for designing and simulating digital circuits and systems, such as FPGAs. <dfn>FPGA</dfn> stands for Field Programable Gate Array is an integrated circuit that can be programmed after manufacturing to perform specific logical functions.</p>
-        </li>    
-        <li>
-            <h3>SQL</h3>
-            <img src="../images/SQL.jpg" alt="SQL Logo" width="150">
-            <p>SQL is Structured Query Language, which is used for storing, manipulating and retrieving data stored in a relational database.</p>
-        </li>
-        <li>
-           <h3> HTML</h3>
-            <img src="../images/HTML.jpg" alt="HTML Logo" width="150">
-            <p> HTML is the standard markup language used to create the structure and content of web pages.It consists of various elements represented by tags that define the structure of the document</p>
-        </li>
-    </ul>
+    <header>
+        <nav>
+            <a href="../index.html">Home</a> 
+            <a href="../#about">About</a>
+            <a href="../education/education.html">Education</a>  
+            <a href="./skill.html">Skills</a>  
+            <a href="../project/project.html">Projects</a> 
+            <a href="../contact/contact.html">Contact</a> 
+        </nav>
+    </header>
+    <div>
+        <h1>My <span>Skills</span></h1>
+        <h2>programing languages</h2>
+        <ul>
+            <li>
+                <div>
 
+                    <h3>C++</h3>
+                    <img src="../images/C++.jpg" alt="C++ Logo" width="100">
+                    <p>C++ is an object-oriented programming language which gives a clear structure to programs and allows code to be reused, lowering development costs.</p>
+                </div>
+            </li>
+            <li>
+                <div>      
+                    <h3> verilog</h3>
+                    <img src="../images/verilog.jpg" alt="verilog Logo" width="150">
+                    <p> Hardware description languages used for designing and simulating digital circuits and systems, such as FPGAs. <dfn>FPGA</dfn> stands for Field Programable Gate Array is an integrated circuit that can be programmed after manufacturing to perform specific logical functions.</p>
+                </div>
+                </li>    
+            <li>
+                <div>
+                    <h3>SQL</h3>
+                    <img src="../images/SQL.jpg" alt="SQL Logo" width="150">
+                    <p>SQL is Structured Query Language, which is used for storing, manipulating and retrieving data stored in a relational database.</p>
+                </div>
+                </li>
+                <li>
+                    <div>    
+                        <h3> HTML</h3>
+                        <img src="../images/HTML.jpg" alt="HTML Logo" width="150">
+                        <p> HTML is the standard markup language used to create the structure and content of web pages.It consists of various elements represented by tags that define the structure of the document</p>
+                    </div>
+                    </li>
+        </ul>
+    </div>  
+    <footer style="text-align: center;">
+        <p>&copy; 2024 My Portfolio | Designed by Sadia Afridi</p>
+    </footer>
 </body>
 </html>

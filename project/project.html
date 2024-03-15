@@ -4,8 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>projects</title>
+ 
 </head>
 <style>
+    body{
+        background-color: rgb(46, 43, 52);
+        /* background-color: rgb(6, 6, 26); */
+        
+        color: white;
+    }
+   
+    span{
+        /* color: rgb(160, 243, 243); */
+        color: rgb(14, 132, 132);
+    }
+    nav{
+        margin-top: 20px;
+       text-align: center;
+    }
+    nav a
+    {
+        color: white;
+        text-decoration: none;
+        padding: 10px 20px;
+        margin-left: 50px;
+    }
     form {
         max-width: 400px;
         margin: 0 auto;
@@ -22,50 +45,61 @@
   
 </style>
 <body>
-    
-    <a href="../index.html">Home</a>  
-    <a href="../education/education.html">Education</a>
-    <a href="../skill/skill.html">skills</a> 
-    <a href="./project.html">project</a> 
-    <a href="../contact/contact.html">contact</a> 
-    <hr>
-    <h1>My projects</h1>
-    <ul>
-        <li>
-            <h3>Portfolio</h3>
-            <img src="../images/HTML_project.PNG" alt="Portfolio Project" width="200">
-            <dl>
-                <dt><b>Portfolio using HTML</b></dt>
-                <dd>This project is my own portfolio website, built using HTML. It displays a range of projects, skills, and experiences.</dd>
-            </dl>
+    <header>
+        <nav>
+            <a href="../index.html">Home</a> 
+            <a href="../index.html#about">About</a> 
+            <a href="../education/education.html">Education</a>
+            <a href="../skill/skill.html">Skills</a> 
+            <a href="./project.html">Projects</a> 
+            <a href="../contact/contact.html">Contact</a> 
+        </nav>
+    </header>
+    <div>
+        <h1>My <span> Projects</span></h1>
+        <ul>
+            <li>
+                <div>
+                    <h3>Portfolio</h3>
+                    <img src="../images/HTML_project.PNG" alt="Portfolio Project" width="200">
+                    <dl>
+                        <dt><b>Portfolio using HTML</b></dt>
+                        <dd>This project is my own portfolio website, built using HTML. It displays a range of projects, skills, and experiences.</dd>
+                    </dl>
+                </div>
         </li>
         <li>
-            <h3>Database</h3>
-            <img src="../images/ERD.jpeg" alt="ERD" width="200">
-            <img src="../images/database.jpeg" alt="Database" width="200">
-            <dl>
-                <dt><b>Database for Inventory Management System</b></dt>
-                <dd>
-                    <ol>
-                        <li>Check the requirements</li>
-                        <li>Draw ERD according to the requirements</li>
-                        <li>Create database with the help of ERD</li>
-                    </ol>
-                </dd>
-            </dl>
+            <div>
+                <h3>Database</h3>
+                <img src="../images/ERD.jpeg" alt="ERD" width="200">
+                <img src="../images/database.jpeg" alt="Database" width="200">
+                <dl>
+                    <dt><b>Database for Inventory Management System</b></dt>
+                    <dd>
+                        <ol>
+                            <li>Check the requirements</li>
+                            <li>Draw ERD according to the requirements</li>
+                            <li>Create database with the help of ERD</li>
+                        </ol>
+                    </dd>
+                </dl>
+            </div>
         </li>
         <li>
-            <h3>VHDL</h3>
-            <img src="../images/demux1.PNG" alt="DEMUX" width="200">
-            <img src="../images/demux2.PNG" alt="DEMUX" width="200">
-            <dl>
-                <dt><b>verilog code for designing demultiplexer</b></dt>
-                <dd>
-                    The Verilog code for a demultiplexer implements a digital logic design where one input signal is selectively routed to one of multiple output lines based on a control signal. It employs conditional statements like if-else or case constructs to determine the output line activated by the control signal's binary representation. This code includes a module declaration, input/output ports, and logic to route the input signal accordingly, often accompanied by testbench code for simulation verification.
-                </dd>
-            </dl>
+            <div>
+                <h3>VHDL</h3>
+                <img src="../images/demux1.PNG" alt="DEMUX" width="200">
+                <img src="../images/demux2.PNG" alt="DEMUX" width="200">
+                <dl>
+                    <dt><b>verilog code for designing demultiplexer</b></dt>
+                    <dd>
+                        The Verilog code for a demultiplexer implements a digital logic design where one input signal is selectively routed to one of multiple output lines based on a control signal. It employs conditional statements like if-else or case constructs to determine the output line activated by the control signal's binary representation. This code includes a module declaration, input/output ports, and logic to route the input signal accordingly, often accompanied by testbench code for simulation verification.
+                    </dd>
+                </dl>
+            </div>
         </li>
     </ul>
+</div>
     <br><br>
     <h2 style="text-align: center;">Feedback</h2>
     <form>
@@ -89,5 +123,8 @@
         
         <input type="image" value="Submit Feedback" src="../images/submit_feedback.PNG" width="370">
     </form>
+    <footer style="text-align: center;">
+        <p>&copy; 2024 My Portfolio | Designed by Sadia Afridi</p>
+    </footer>
 </body>
 </html>
