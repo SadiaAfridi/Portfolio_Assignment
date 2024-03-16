@@ -28,10 +28,8 @@
         margin-left: 50px;
     }
 <style>
-    form
-    {
-        width: 28%;
-        
+         form {
+        max-width: 400px;  
     }
         fieldset
     {
@@ -39,15 +37,26 @@
         padding: 30px;
         width: 28%; 
         margin: 0 auto; 
-        border: 1px solid #ccc; 
-        /* background-color:#f0f0f0; */
     }
         input[type="text"], input[type="email"] {
             width: 90%;
-            padding: 10px;
-            border-radius: 3px;
-            border: 1px solid #ccc;
+            padding: 8px;
+            border-radius: 6px;
+            /* border: 1px solid #ccc; */
         }
+        /* form {
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ccc ;
+    }
+    input[type="text"], input[type="email"], textarea {
+        width: 90%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    } */
    legend
     {
     text-align: center;
@@ -56,7 +65,6 @@
     }
    #location{
     margin-top: 40px;
-    /* margin-left: 34%; */
     text-align: center;
 
    }
@@ -103,23 +111,23 @@
             <br>
             <div>
                 <label for="name"> Name</label><br>
-                <input type="text" id="name" name="name" placeholder="Your Name">
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
             </div>
             <br><br>
             <div>
                 <label for="phon no">Your Phone No</label><br>
-                <input type="text" id="phone no" name="phone no">
+                <input type="text" id="phone no" name="phone no" placeholder="Enter Your Phone No" required>
             </div>
             <br><br>
             <div>
                 <label for="email">Your Email</label><br>
-                <input type="email" id="Email" name="email" placeholder="example@example.com">
+                <input type="email" id="Email" name="email" placeholder="example@example.com" required>
             </div>
             <br><br>
             <div>
                 <label for="message">Message</label><br>
                 <br>
-                <textarea name="message" id="message" cols="40" rows="5" ></textarea>
+                <textarea name="message" id="message" cols="40" rows="5" placeholder="Enter Your Message Here..."></textarea>
             </div>
             <br><br>
             <div>
