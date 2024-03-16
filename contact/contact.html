@@ -9,13 +9,11 @@
 <style>
     body{
         background-color: rgb(46, 43, 52);
-        /* background-color: rgb(6, 6, 26); */
-        
         color: white;
     }
    
     span{
-        /* color: rgb(160, 243, 243); */
+        
         color: rgb(14, 132, 132);
     }
     nav{
@@ -47,7 +45,6 @@
         input[type="text"], input[type="email"] {
             width: 90%;
             padding: 10px;
-            margin-bottom: 5px;
             border-radius: 3px;
             border: 1px solid #ccc;
         }
@@ -59,20 +56,28 @@
     }
    #location{
     margin-top: 40px;
-    margin-left: 34%;
+    /* margin-left: 34%; */
+    text-align: center;
 
    }
    #contact-container
    {
     margin-left: 30px;
    }
-   
+   footer
+    {
+        padding: 5px;
+        background-color: rgb(66, 63, 72);
+    }
+    #backtotop
+    {
+        margin-left: 90%;
+    }
 </style>
 <body>
     <header>
         <nav>
             <a href="../index.html">Home</a>
-            <a href="../index.html#about">About</a>
             <a href="../education/education.html">Education</a>
             <a href="../skill/skill.html">Skills</a>    
             <a href="../project/project.html">Projects</a> 
@@ -80,7 +85,7 @@
         </nav>
     </header>
     <div>
-        <h1 style="text-align: center;">Contact</h1>
+        <h1 style="text-align: center;" id="contact">Contact</h1>
     </div>
     <div id="contact-container">
         <h3>Contact <span>Me Through</span> </h3>
@@ -126,10 +131,10 @@
 </div>
   <div id="location">
 
-      <h1>Location</h1>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3307.823624711184!2d71.48924057466041!3d33.9970638206437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38d9173963c0c2b7%3A0x9b29198791578d06!2sSMIT%20Peshawar%20Campus!5e0!3m2!1sen!2s!4v1710076805028!5m2!1sen!2s"  width="400" height="300" style="border-radius: 5px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <h2>Location of <span>SMIT Peshawar Campus</span></h2>
+      <iframe src="https://rb.gy/htwrqj"  width="400" height="300" style="border-radius: 5px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
-    
+    <a href="#contact" id="backtotop"><img align="center" src="../images/top.png" alt="top button" width="30px"></a>
     <footer style="text-align: center;">
         <p>&copy; 2024 My Portfolio | Designed by Sadia Afridi</p>
     </footer>

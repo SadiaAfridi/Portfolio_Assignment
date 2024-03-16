@@ -9,13 +9,13 @@
 <style>
     body{
         background-color: rgb(46, 43, 52);
-        /* background-color: rgb(6, 6, 26); */
+       
         
         color: white;
     }
    
     span{
-        /* color: rgb(160, 243, 243); */
+        
         color: rgb(14, 132, 132);
     }
     nav{
@@ -30,7 +30,7 @@
         margin-left: 50px;
     }
     #profile{
-        border-radius: 30px;
+        border-radius: 100px;
         /* margin-left: 50%; */
     }
     #linkedin{
@@ -43,6 +43,23 @@
     #contact a
     {
         margin-left: 20px;
+    }
+    #About {
+    /* margin-left: 20px; */
+    margin-bottom: 40px;
+    text-align: center;
+    background-color: rgb(66, 63, 72);
+    padding: 50px;
+}
+    footer
+    {
+       text-align: center;
+        padding: 5px;
+        background-color: rgb(66, 63, 72);
+    }
+    #backtotop
+    {
+        margin-left: 90%;
     }
 </style>
 <body>
@@ -57,28 +74,28 @@
         </nav>
     </header>
             <div id="info">
-                <h1 style="text-align: center;">Welcome to My <span>Portfolio</span></h1>
+                <h1 style="text-align: center;" id="top">Welcome to My <span>Portfolio</span></h1>
                 <img src="./images/photo.jpg" alt="Profile photo of Sadia Afridi"  width="150" align="center" id="profile">
                 <br><br>
-                <audio controls>
-                    <source src="audio/bird.mp3" type="audio/mpeg">
-                </audio>
+                <audio src="./audio/bird.mp3" controls ></audio>
                 <h2>Hello, I am</h2>
                 <h1>SADIA AFRIDI </h1>
                 <h1>I am a <span>Web Developer</span></h1>
             </div>
             <div id="contact">
                 <a href="https://www.linkedin.com/in/sadia-a-8818032b2/" target="_blank" id="linkedin"><img src="./images/linkedin.png" alt=""></a>
-                <a href="mailto:sadiaafridi663@gmail.com"><img src="./images/gmail.png" alt="gmail"> </a>
-                <a href="https://github.com/SadiaAfridi"><img src="./images/github.png "  alt="github" width="50"></a>
+                <a href="mailto:sadiaafridi663@gmail.com" target="_blank"><img src="./images/gmail.png" alt="gmail"> </a>
+                <a href="https://github.com/SadiaAfridi" target="_blank"><img src="./images/github.png "  alt="github" width="50"></a>
             </div>
- <section id="About" style="text-align: center;">
-    <h1>ABOUT <span>ME</span></h1>
-    <p><br>I'm Sadia Afridi  student of BS computer science at Shaheed Benazir Bhutto Women University Peshawar. <br> currently i'm learning web and mobile app development at <strong>SMIT</strong></p>
-
-</section>
-<footer style="text-align: center;">
-    <p>&copy; 2024 My Portfolio | Designed by Sadia Afridi</p>
+            <section id="About" style="text-align: center;">
+                <h1>ABOUT <span>ME</span></h1>
+                
+                <p>Hello! I'm Sadia Afridi, a Computer Science student at Shaheed Benazir Bhutto Women University in Peshawar. Alongside my studies, I'm fully engaged in exploring the realms of web and mobile app development at <strong>SMIT</strong>.I'm passionate about using technology to create meaningful solutions and eager to delve deeper into this exciting field.</p>
+            </section>
+<a href="#top" id="backtotop"><img align="center" src="./images/top.png" alt="top button" width="30px"></a>
+<footer >
+    <p >&copy; 2024 My Portfolio | Designed by Sadia Afridi  </p>
+  
 </footer>
 </body>
 </html>

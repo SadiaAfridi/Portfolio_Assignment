@@ -9,13 +9,10 @@
 <style>
     body{
         background-color: rgb(46, 43, 52);
-        /* background-color: rgb(6, 6, 26); */
-        
         color: white;
     }
    
     span{
-        /* color: rgb(160, 243, 243); */
         color: rgb(14, 132, 132);
     }
     nav{
@@ -37,18 +34,25 @@
     }
     input[type="text"], input[type="email"], textarea {
         width: 90%;
-        padding: 4px;
+        padding: 8px;
         margin-bottom: 10px;
-        border-radius: 3px;
+        border-radius: 5px;
         border: 1px solid #ccc;
     }
-  
+    footer
+    {
+        padding: 5px;
+        background-color: rgb(66, 63, 72);
+    }
+    #backtotop
+    {
+        margin-left: 90%;
+    }
 </style>
 <body>
     <header>
         <nav>
             <a href="../index.html">Home</a> 
-            <a href="../index.html#about">About</a> 
             <a href="../education/education.html">Education</a>
             <a href="../skill/skill.html">Skills</a> 
             <a href="./project.html">Projects</a> 
@@ -56,7 +60,7 @@
         </nav>
     </header>
     <div>
-        <h1>My <span> Projects</span></h1>
+        <h1 id="projects">My <span> Projects</span></h1>
         <ul>
             <li>
                 <div>
@@ -68,6 +72,16 @@
                     </dl>
                 </div>
         </li>
+        <li>
+            <div>
+                <h3>Detail Marks Certificate</h3>
+               <video src="../video/DMC.mkv" width="200px" autoplay controls ></video>
+                <dl>
+                    <dt><b>DMC through HTML</b></dt>
+                    <dd> The Detail Marks Certificate (DMC) created through HTML provides a comprehensive overview of a student's academic performance. It includes detailed information about the subjects studied and the marks obtained in each subject.</dd>
+                </dl>
+            </div>
+    </li>
         <li>
             <div>
                 <h3>Database</h3>
@@ -105,10 +119,10 @@
     <form>
         <label for="feedback-name">Your Name:</label><br>
         <input type="text" id="feedback-name" name="feedback-name" placeholder="Name" required><br>
-        
+        <br>
         <label for="feedback-email">Your Email:</label><br>
         <input type="email" id="feedback-email" name="feedback-email" placeholder="Email" required><br>
-        
+        <br>
         <label for="feedback-project">Project:</label><br>
         <select id="feedback-project" name="feedback-project">
             <option value="options">Select</option>
@@ -117,13 +131,13 @@
             <option value="Database">verilog</option>
             
         </select><br>
-        
+        <br>
         <label for="feedback-message">Your Feedback:</label><br>
         <textarea id="feedback-message" name="feedback-message" rows="4" cols="50" required></textarea><br>
-        
+        <br>
         <input type="image" value="Submit Feedback" src="../images/submit_feedback.PNG" width="370">
     </form>
-    <footer style="text-align: center;">
+    <a href="#projects" id="backtotop"><img align="center" src="../images/top.png" alt="top button" width="30px"></a>    <footer style="text-align: center;">
         <p>&copy; 2024 My Portfolio | Designed by Sadia Afridi</p>
     </footer>
 </body>
