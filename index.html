@@ -5,71 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <!-- javascript for audio -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var audio = new Audio("./audio/sadia-afridi.mp3");
+            function playAudio() {
+                audio.play();
+            }
+            document.getElementById("speaker").addEventListener("click", playAudio);
+        });
+    </script>
 </head>
-<style>
-    body
-    {
-        background-color: rgb(46, 43, 52);
-        color: white;
-    }
-   
-    span
-    {
-        color: rgb(14, 132, 132);
-    }
-    nav
-    {
-        margin-top: 20px;
-       text-align: center;
-    }
-    nav a
-    {
-        color: white;
-        text-decoration: none;
-        padding: 10px 20px;
-        margin-left: 50px;
-    }
-    #profile
-    {
-        border-radius: 100px;
-    }
-    #linkedin
-    {
-        color: white;
-        text-decoration: none;
-    }
-    #profile-section
-    {
-        margin-left: 20px;
-    }
-    #intro
-    {
-        margin-left: 20px;
-    }
-    #contact a
-    {
-        margin-left: 20px;
-    }
-    #About 
-    {
-   
-    margin-bottom: 40px;
-    text-align: center;
-    background-color: rgb(66, 63, 72);
-    padding: 50px;
-}
-    footer
-    {
-       text-align: center;
-        padding: 5px;
-        background-color: rgb(66, 63, 72);
-    }
-    #backtotop
-    {
-        margin-left: 90%;
-    }
-</style>
+<link rel="stylesheet" href="./style.css">
 <body>
+  
     <header style="text-align: center;">
         <nav>
             <a href="./index.html">Home</a> 
@@ -84,7 +33,10 @@
                 <h1 style="text-align: center;" id="top">Welcome to My <span>Portfolio</span></h1>
             </div>  <img src="./images/profile.PNG" alt="Profile photo of Sadia Afridi"  width="150" align="center" id="profile">
                 <br><br>
-                <audio src="./audio/sadia afridi.mp3" controls></audio>
+            <div>
+                <img id="speaker" src="./images/speaker.png" alt="Speaker Icon"></h2>
+            </div>
+                
                 <div id="intro">
                     <h2>Hello, I am</h2>
                     <h1>SADIA AFRIDI </h1>
@@ -96,13 +48,15 @@
                 <a href="https://github.com/SadiaAfridi" target="_blank"><img src="./images/github.png "  alt="github" width="50"></a>
             </div>
             <section id="About" style="text-align: center;">
-                <h1>ABOUT <span>ME</span></h1>
-                <p>Hello! I'm Sadia Afridi, a Computer Science student at Shaheed Benazir Bhutto Women University in Peshawar. Alongside my studies, I'm fully engaged in exploring the realms of web and mobile app development at <strong>SMIT</strong>.I'm passionate about using technology to create meaningful solutions and eager to delve deeper into this exciting field.</p>
+                <div>
+                    <h1>ABOUT <span>ME</span></h1>
+                    <p>Hello! I'm Sadia Afridi, a Computer Science student at Shaheed Benazir Bhutto Women University in Peshawar. Alongside my studies, I'm fully engaged in exploring the realms of web and mobile app development at <strong>SMIT</strong>.I'm passionate about using technology to create meaningful solutions and eager to delve deeper into this exciting field.</p>
+                </div>
             </section>
-<a href="#top" id="backtotop"><img align="center" src="./images/top.png" alt="top button" width="30px"></a>
-<footer >
+<a href="#top" id="backtotop"><img  src="./images/top.png" alt="top button" width="30px"></a>
+<footer>
     <p >&copy; 2024 My Portfolio | Designed by Sadia Afridi  </p>
-  
 </footer>
 </body>
 </html>
+ 

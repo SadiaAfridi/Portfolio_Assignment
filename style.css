@@ -1,0 +1,61 @@
+body
+{
+    background-color: rgb(46, 43, 52);
+    color: #ffffff;
+}
+
+span
+{
+    color: #0e8484;
+}
+nav
+{
+    margin-top: 20px;
+   text-align: center;
+}
+nav a
+{
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-left: 50px;
+}
+#profile
+{
+    border-radius: 100px;
+}
+#linkedin
+{
+    color: #ffffff;
+    text-decoration: none;
+}
+#profile-section
+{
+    margin-left: 20px;
+}
+#intro
+{
+    margin-left: 20px;
+}
+#contact a
+{
+    margin-left: 20px;
+}
+#About 
+{
+
+margin-bottom: 40px;
+text-align: center;
+background-color: #423f48;
+padding: 50px;
+}
+footer
+{
+   text-align: center;
+    padding: 5px;
+    background-color: hsl(260, 7%, 26%);
+}
+#backtotop
+{
+    margin-left: 90%;
+}
